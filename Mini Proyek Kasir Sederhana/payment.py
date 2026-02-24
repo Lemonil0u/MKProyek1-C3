@@ -25,17 +25,17 @@ def cetak_struk(daftar_belanja, subtotal, potongan, pajak, total_akhir, bayar, k
     print("\n" + "-"*30)
 
 # looping item yang dibeli
-for item in daftar_belanja:
-    print(f"{item[0]:<15}x{item[1]} Rp{item[3]:>8}")
+    for item in daftar_belanja:
+        print(f"{item[0]:<15}x{item[1]} Rp{item[3]:>8}")
 
     print("-"*30)
     print(f"Subtotal            : Rp{subtotal:>8}")
     print(f"Diskon              : Rp{potongan:>8}")
-    print(f"PPN (11%)           : Rp{subtotal:>8}")
+    print(f"PPN (11%)           : Rp{pajak:>8}")
     print("-"*30)
     print(f"TOTAL AKHIR         : Rp{total_akhir:>8}")
     print(f"Bayar               : Rp{bayar:>8}")
-    print(f"Kembali             : Rp{kembali:>8}")
+    print(f"Kembali             : Rp{kembalian:>8}")
     print("-"*30)
     print("     Terima Kasih Telah Belanja!")
     print("-"*30 + "\n")
